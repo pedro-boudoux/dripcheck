@@ -1,7 +1,21 @@
-dripcheck is a web app I made using express.js to help me better learn how express and API calls work.
+# Dripcheck
+Dripcheck is a website made with express that uses an LLM to give you suggestions on what to wear based on the weather data of the city you entered.
 
-How it works:
-1. User enters their city
-2. weather information about their city is obtained via an openweathermap api call
-3. The weather information is then sent in an openai api call attached to the question 'what should i wear?'
-4. openai returns a response which is displayed on the user's screen
+## How to use
+NOTE: Make sure you have Ollama installed, and that you have installed the gemma3:12b model.
+
+### 1. Clone the repository
+```bash
+    git clone https://github.com/pedro-boudoux/dripcheck
+```
+
+### 2. Install all node packages
+```bash
+    npm i
+```
+
+### 3. Start the server
+```bash
+    node app.js
+```
+Once you have started the server, you can access the website at `localhost:3000`.
