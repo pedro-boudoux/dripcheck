@@ -1,1 +1,6 @@
-.env
+# Ignore node_modules
+node_modules/
+
+# Add other things you want to ignore, e.g.:
+# .env
+# .DS_Store

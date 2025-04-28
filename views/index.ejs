@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my app</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+
+  <div>
+    <h1>Dripcheck</h1>
+    <h2>Locally hosted AI Stylist</h2>
+    <h3>Made by Pedro Boudoux</h3>
+  </div>
+
+  <div>
+    <form action="/submit" method="POST">
+      <label for="street">Enter your City:</label>
+      <input type="text" name="city" required>
+      <input type="submit" value="Style Me!">
+    </form>
+  </div>
+
+  <% if (locals.suggestion) { %>
+    <h2>Outfit Suggestion: </h2>
+    <p><%= locals.suggestion %></p>
+  <% } %>    
+</body>
+
+</html>
+
